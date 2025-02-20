@@ -4,13 +4,6 @@ const captainModel = require('./models/captain.model');
 const cors = require("cors");
 let io;
 
-app.use(cors({ 
-  origin: "https://uber-frontend-ge49.onrender.com", // Allow frontend
-  methods: "GET,POST,PUT,DELETE",
-  credentials: true
-}));
-
-
 function initializeSocket(server) {
     io = socketIo(server, {
         cors: {
@@ -20,7 +13,7 @@ function initializeSocket(server) {
     });
 
     io.on('connection', (socket) => {
-        
+        console.log(`Client connected: ${socket.id}`);
 
 
         socket.on('join', async (data) => {
@@ -50,19 +43,19 @@ function initializeSocket(server) {
         });
 
         socket.on('disconnect', () => {
-            
+            console.log(`Client disconnected: ${socket.id}`);
         });
     });
 }
 
 const sendMessageToSocketId = (socketId, messageObject) => {
 
-
+console.log(messageObject);
 
     if (io) {
         io.to(socketId).emit(messageObject.event, messageObject.data);
     } else {
-        
+        console.log('Socket.io not initialized.');
     }
 }
 

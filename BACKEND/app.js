@@ -12,8 +12,6 @@ const rideRoutes = require('./routes/ride.routes');
 
 connectToDb();
 
-const cors = require("cors");
-
 app.use(cors({ 
   origin: "https://uber-frontend-ge49.onrender.com", 
   methods: "GET,POST,PUT,DELETE",

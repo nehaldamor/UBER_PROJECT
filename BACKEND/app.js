@@ -14,7 +14,7 @@ connectToDb();
 
 
 app.use(cors({
-  origin: ["http://localhost:5173", "https://uber-frontend-5x0l.onrender.com"],
+  origin: ["http://localhost:5173", "https://uber-frontend-ejk3.onrender.com"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));

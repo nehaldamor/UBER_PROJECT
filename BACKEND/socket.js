@@ -8,7 +8,7 @@ function initializeSocket(server) {
         cors: {
             origin: [
                 "http://localhost:5173",
-                "https://uber-frontend-5x0l.onrender.com"
+                "https://uber-frontend-ejk3.onrender.com"
             ],
     methods: ['GET', 'POST'],
     credentials: true

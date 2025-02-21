@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://uber-project-4y97.onrender.com', // Your backend URL
+        target: 'https://uber-backend-j8lu.onrender.com', // Your backend URL
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace(/^\/api/, '') // Remove /api prefix

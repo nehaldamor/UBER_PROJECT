@@ -12,11 +12,13 @@ const rideRoutes = require('./routes/ride.routes');
 
 connectToDb();
 
-app.use(cors({ 
-  origin: "https://uber-frontend-ge49.onrender.com", 
-  methods: "GET,POST,PUT,DELETE",
+
+app.use(cors({
+  origin: ["http://localhost:5173", "https://uber-frontend-5x0l.onrender.com"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
+
 
 
 app.use(cookieParser());

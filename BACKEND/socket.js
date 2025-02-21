@@ -1,7 +1,6 @@
 const socketIo = require('socket.io');
 const userModel = require('./models/user.model');
 const captainModel = require('./models/captain.model');
-const cors = require("cors");
 let io;
 
 function initializeSocket(server) {
@@ -11,7 +10,8 @@ function initializeSocket(server) {
                 "http://localhost:5173",
                 "https://uber-frontend-5x0l.onrender.com"
             ],
-    methods: ['GET', 'POST']
+    methods: ['GET', 'POST'],
+    credentials: true
   }
     });
 

@@ -102,15 +102,12 @@ const CaptainHome = () => {
     return (
         <div className='h-screen'>
             <div className='fixed p-6 top-0 flex items-center justify-between w-screen'>
-                <img className='w-16' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkztcTKu7__1VixolaDNu07pX2ILwrVexBBA&s" alt="" />
+                <img className='w-16' src="https://cdn5.f-cdn.com/contestentries/2317795/51872027/651b04f8d812b_thumb900.jpg" alt="" />
                 <Link to='/captain-home' className=' h-10 w-10 bg-white flex items-center justify-center rounded-full'>
                     <i className="text-lg font-medium ri-logout-box-r-line"></i>
                 </Link>
             </div>
-            <div className='h-3/5'>
-                <img className='h-full w-full object-cover' src="https://miro.medium.com/v2/resize:fit:1400/0*gwMx05pqII5hbfmX.gif" alt="" />
-
-            </div>
+           
             <div className='h-2/5 p-6'>
                 <CaptainDetails />
             </div>

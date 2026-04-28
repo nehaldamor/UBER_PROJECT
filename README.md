@@ -1,5 +1,5 @@
 
-# UBER Project
+# Ride Booking Platform Project
 
 A full-stack ride-sharing application built with Node.js/Express and React.
 
